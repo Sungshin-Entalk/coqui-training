@@ -1,0 +1,45 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.9.10",
+    "heartbeatAt": "2024-08-07T13:45:05.746319",
+    "startedAt": "2024-08-07T13:45:04.875455",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:\\Users\\yiuri\\OneDrive\\\ubb38\uc11c\\GitHub\\coqui-training\\train_glowtts.py",
+    "codePathLocal": "train_glowtts.py",
+    "codePath": "train_glowtts.py",
+    "git": {
+        "remote": "https://github.com/Sungshin-Entalk/coqui-training.git",
+        "commit": "6f3b984ba999d0e58d8f808b53ce31b06a690bb6"
+    },
+    "email": "yiurimone@gmail.com",
+    "root": "C:/Users/yiuri/OneDrive/\ubb38\uc11c/GitHub/coqui-training",
+    "host": "DESKTOP-OR4P42Q",
+    "username": "yiuri",
+    "executable": "C:\\Users\\yiuri\\OneDrive\\\ubb38\uc11c\\GitHub\\coqui-training\\venv\\Scripts\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2496.0,
+        "min": 0.0,
+        "max": 2496.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2496.0,
+            "min": 0.0,
+            "max": 2496.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 230.58538436889648,
+            "used": 229.03956985473633
+        }
+    },
+    "memory": {
+        "total": 7.730640411376953
+    }
+}

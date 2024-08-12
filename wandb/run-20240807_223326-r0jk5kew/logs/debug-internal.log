@@ -1,0 +1,194 @@
+2024-08-07 22:33:27,144 INFO    StreamThr :27452 [internal.py:wandb_internal():85] W&B internal server running at pid: 27452, started at: 2024-08-07 22:33:27.140485
+2024-08-07 22:33:27,317 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: status
+2024-08-07 22:33:27,338 INFO    WriterThread:27452 [datastore.py:open_for_write():87] open: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\run-r0jk5kew.wandb
+2024-08-07 22:33:27,340 DEBUG   SenderThread:27452 [sender.py:send():379] send: header
+2024-08-07 22:33:30,016 DEBUG   SenderThread:27452 [sender.py:send():379] send: run
+2024-08-07 22:33:30,851 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: check_version
+2024-08-07 22:33:31,087 INFO    SenderThread:27452 [dir_watcher.py:__init__():211] watching files in: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files
+2024-08-07 22:33:31,088 INFO    SenderThread:27452 [sender.py:_start_run_threads():1188] run started: r0jk5kew with start time 1723037607.094641
+2024-08-07 22:33:31,088 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: check_version
+2024-08-07 22:33:31,217 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: run_start
+2024-08-07 22:33:31,416 DEBUG   HandlerThread:27452 [system_info.py:__init__():26] System info init
+2024-08-07 22:33:31,416 DEBUG   HandlerThread:27452 [system_info.py:__init__():41] System info init done
+2024-08-07 22:33:31,417 INFO    HandlerThread:27452 [system_monitor.py:start():194] Starting system monitor
+2024-08-07 22:33:31,466 INFO    SystemMonitor:27452 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-07 22:33:31,466 INFO    HandlerThread:27452 [system_monitor.py:probe():214] Collecting system info
+2024-08-07 22:33:31,492 DEBUG   HandlerThread:27452 [system_info.py:probe():152] Probing system
+2024-08-07 22:33:31,498 DEBUG   HandlerThread:27452 [system_info.py:_probe_git():137] Probing git
+2024-08-07 22:33:31,602 INFO    SystemMonitor:27452 [interfaces.py:start():188] Started cpu monitoring
+2024-08-07 22:33:31,643 INFO    SystemMonitor:27452 [interfaces.py:start():188] Started disk monitoring
+2024-08-07 22:33:31,685 INFO    SystemMonitor:27452 [interfaces.py:start():188] Started memory monitoring
+2024-08-07 22:33:31,748 INFO    SystemMonitor:27452 [interfaces.py:start():188] Started network monitoring
+2024-08-07 22:33:32,372 DEBUG   HandlerThread:27452 [system_info.py:_probe_git():145] Probing git done
+2024-08-07 22:33:32,372 DEBUG   HandlerThread:27452 [system_info.py:probe():200] Probing system done
+2024-08-07 22:33:32,372 DEBUG   HandlerThread:27452 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.10', 'heartbeatAt': '2024-08-07T13:33:31.493732', 'startedAt': '2024-08-07T13:33:26.981753', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'c:\\Users\\yiuri\\OneDrive\\문서\\GitHub\\coqui-training\\train_glowtts.py', 'codePathLocal': 'train_glowtts.py', 'codePath': 'train_glowtts.py', 'git': {'remote': 'https://github.com/Sungshin-Entalk/coqui-training.git', 'commit': '6f3b984ba999d0e58d8f808b53ce31b06a690bb6'}, 'email': 'yiurimone@gmail.com', 'root': 'C:/Users/yiuri/OneDrive/문서/GitHub/coqui-training', 'host': 'DESKTOP-OR4P42Q', 'username': 'yiuri', 'executable': 'C:\\Users\\yiuri\\OneDrive\\문서\\GitHub\\coqui-training\\venv\\Scripts\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2496.0, 'min': 0.0, 'max': 2496.0}, 'cpu_freq_per_core': [{'current': 2496.0, 'min': 0.0, 'max': 2496.0}], 'disk': {'/': {'total': 230.58538436889648, 'used': 228.98627853393555}}, 'memory': {'total': 7.730640411376953}}
+2024-08-07 22:33:32,373 INFO    HandlerThread:27452 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-07 22:33:32,373 INFO    HandlerThread:27452 [system_monitor.py:probe():227] Publishing system info
+2024-08-07 22:33:32,376 INFO    HandlerThread:27452 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-07 22:33:32,431 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: status_report
+2024-08-07 22:33:32,432 DEBUG   SenderThread:27452 [sender.py:send():379] send: files
+2024-08-07 22:33:32,433 INFO    SenderThread:27452 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-08-07 22:33:33,038 INFO    Thread-16 :27452 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\wandb-metadata.json
+2024-08-07 22:33:33,430 INFO    wandb-upload_0:27452 [upload_job.py:push():130] Uploaded file C:\Users\yiuri\AppData\Local\Temp\tmpubf2o294wandb\1q82qrtz-wandb-metadata.json
+2024-08-07 22:33:34,694 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-07 22:33:34,695 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: python_packages
+2024-08-07 22:33:34,696 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-07 22:33:34,698 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: stop_status
+2024-08-07 22:33:34,701 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-07 22:33:34,992 DEBUG   SenderThread:27452 [sender.py:send():379] send: telemetry
+2024-08-07 22:33:35,046 INFO    Thread-16 :27452 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\requirements.txt
+2024-08-07 22:33:35,047 INFO    Thread-16 :27452 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\output.log
+2024-08-07 22:33:35,716 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-07 22:33:36,720 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-07 22:33:37,063 INFO    Thread-16 :27452 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\output.log
+2024-08-07 22:33:37,726 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-07 22:33:38,020 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: status_report
+2024-08-07 22:33:38,719 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-07 22:33:38,881 DEBUG   SenderThread:27452 [sender.py:send():379] send: exit
+2024-08-07 22:33:38,881 INFO    SenderThread:27452 [sender.py:send_exit():586] handling exit code: 1
+2024-08-07 22:33:38,881 INFO    SenderThread:27452 [sender.py:send_exit():588] handling runtime: 7
+2024-08-07 22:33:38,883 INFO    SenderThread:27452 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-07 22:33:38,884 INFO    SenderThread:27452 [sender.py:send_exit():594] send defer
+2024-08-07 22:33:38,885 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:38,885 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-07 22:33:38,886 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:38,886 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-08-07 22:33:38,887 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 1
+2024-08-07 22:33:38,887 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:38,887 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-07 22:33:38,888 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:38,888 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-08-07 22:33:38,888 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 2
+2024-08-07 22:33:38,889 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:38,889 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-07 22:33:38,889 INFO    HandlerThread:27452 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-07 22:33:38,891 INFO    HandlerThread:27452 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-07 22:33:38,891 DEBUG   SystemMonitor:27452 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-07 22:33:38,892 INFO    HandlerThread:27452 [interfaces.py:finish():200] Joined disk monitor
+2024-08-07 22:33:38,892 DEBUG   SystemMonitor:27452 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-07 22:33:38,893 INFO    HandlerThread:27452 [interfaces.py:finish():200] Joined memory monitor
+2024-08-07 22:33:38,893 DEBUG   SystemMonitor:27452 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-07 22:33:38,894 INFO    HandlerThread:27452 [interfaces.py:finish():200] Joined network monitor
+2024-08-07 22:33:38,896 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:38,897 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-08-07 22:33:38,897 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 3
+2024-08-07 22:33:38,897 DEBUG   SenderThread:27452 [sender.py:send():379] send: stats
+2024-08-07 22:33:38,897 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:38,898 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-07 22:33:38,899 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:38,899 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-08-07 22:33:38,900 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 4
+2024-08-07 22:33:38,900 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:38,901 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-07 22:33:38,902 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:38,903 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-08-07 22:33:38,903 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 5
+2024-08-07 22:33:38,903 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:38,904 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-07 22:33:38,905 DEBUG   SenderThread:27452 [sender.py:send():379] send: summary
+2024-08-07 22:33:38,907 INFO    SenderThread:27452 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-07 22:33:38,908 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:38,909 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-08-07 22:33:38,909 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 6
+2024-08-07 22:33:38,910 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:38,910 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-07 22:33:38,912 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:38,912 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-08-07 22:33:38,920 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: status_report
+2024-08-07 22:33:39,089 INFO    Thread-16 :27452 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\wandb-summary.json
+2024-08-07 22:33:39,400 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 7
+2024-08-07 22:33:39,401 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:39,401 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-07 22:33:39,401 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:39,402 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-08-07 22:33:39,891 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-07 22:33:40,106 INFO    Thread-16 :27452 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\config.yaml
+2024-08-07 22:33:41,119 INFO    Thread-16 :27452 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\output.log
+2024-08-07 22:33:41,150 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 8
+2024-08-07 22:33:41,150 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: poll_exit
+2024-08-07 22:33:41,151 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:41,152 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-07 22:33:41,153 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:41,154 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-08-07 22:33:41,154 INFO    SenderThread:27452 [job_builder.py:build():440] Attempting to build job artifact
+2024-08-07 22:33:41,156 INFO    SenderThread:27452 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-08-07 22:33:41,546 INFO    SenderThread:27452 [job_builder.py:build():545] adding wandb-job metadata file
+2024-08-07 22:33:41,597 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 9
+2024-08-07 22:33:41,599 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:41,599 DEBUG   SenderThread:27452 [sender.py:send():379] send: artifact
+2024-08-07 22:33:41,599 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-07 22:33:41,916 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-07 22:33:42,133 INFO    Thread-16 :27452 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\output.log
+2024-08-07 22:33:43,505 INFO    wandb-upload_1:27452 [upload_job.py:push():88] Uploaded file C:\Users\yiuri\AppData\Local\Temp\tmpbo4grdpg\wandb-job.json
+2024-08-07 22:33:43,571 INFO    wandb-upload_0:27452 [upload_job.py:push():88] Uploaded file C:\Users\yiuri\AppData\Local\wandb\wandb\artifacts\staging\tmpeyhgbx85
+2024-08-07 22:33:45,129 INFO    SenderThread:27452 [sender.py:send_artifact():1537] sent artifact job-https___github.com_Sungshin-Entalk_coqui-training.git_train_glowtts.py - {'id': 'QXJ0aWZhY3Q6MTExMzA5NDAzMg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjM4NDg1NTI4Mw==', 'latestArtifact': None}}
+2024-08-07 22:33:45,129 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:45,130 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-08-07 22:33:45,130 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: status_report
+2024-08-07 22:33:45,130 INFO    SenderThread:27452 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-07 22:33:45,161 INFO    SenderThread:27452 [dir_watcher.py:finish():388] scan: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files
+2024-08-07 22:33:45,162 INFO    SenderThread:27452 [dir_watcher.py:finish():402] scan save: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\config.yaml config.yaml
+2024-08-07 22:33:45,163 INFO    SenderThread:27452 [dir_watcher.py:finish():402] scan save: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\output.log output.log
+2024-08-07 22:33:45,165 INFO    SenderThread:27452 [dir_watcher.py:finish():402] scan save: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\requirements.txt requirements.txt
+2024-08-07 22:33:45,170 INFO    SenderThread:27452 [dir_watcher.py:finish():402] scan save: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\wandb-metadata.json wandb-metadata.json
+2024-08-07 22:33:45,171 INFO    SenderThread:27452 [dir_watcher.py:finish():402] scan save: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\wandb-summary.json wandb-summary.json
+2024-08-07 22:33:45,172 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 10
+2024-08-07 22:33:45,172 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: poll_exit
+2024-08-07 22:33:45,173 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:45,176 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-07 22:33:45,181 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:45,182 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-08-07 22:33:45,183 INFO    SenderThread:27452 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-07 22:33:45,710 INFO    wandb-upload_1:27452 [upload_job.py:push():130] Uploaded file C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\config.yaml
+2024-08-07 22:33:45,967 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-07 22:33:45,968 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: poll_exit
+2024-08-07 22:33:46,203 INFO    wandb-upload_3:27452 [upload_job.py:push():130] Uploaded file C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\wandb-summary.json
+2024-08-07 22:33:46,326 INFO    wandb-upload_0:27452 [upload_job.py:push():130] Uploaded file C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\output.log
+2024-08-07 22:33:46,970 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-07 22:33:46,971 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: poll_exit
+2024-08-07 22:33:47,981 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-07 22:33:47,981 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: poll_exit
+2024-08-07 22:33:48,099 INFO    wandb-upload_2:27452 [upload_job.py:push():130] Uploaded file C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\files\requirements.txt
+2024-08-07 22:33:48,311 INFO    Thread-15 :27452 [sender.py:transition_state():614] send defer: 11
+2024-08-07 22:33:48,312 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:48,312 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-07 22:33:48,313 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:48,313 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-08-07 22:33:48,313 INFO    SenderThread:27452 [file_pusher.py:join():175] waiting for file pusher
+2024-08-07 22:33:48,315 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 12
+2024-08-07 22:33:48,315 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:48,315 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-07 22:33:48,315 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:48,315 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-08-07 22:33:48,315 INFO    SenderThread:27452 [file_stream.py:finish():601] file stream finish called
+2024-08-07 22:33:48,542 INFO    SenderThread:27452 [file_stream.py:finish():605] file stream finish is done
+2024-08-07 22:33:48,542 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 13
+2024-08-07 22:33:48,543 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:48,543 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-07 22:33:48,543 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:48,543 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-08-07 22:33:48,543 INFO    SenderThread:27452 [sender.py:transition_state():614] send defer: 14
+2024-08-07 22:33:48,544 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: defer
+2024-08-07 22:33:48,544 INFO    HandlerThread:27452 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-07 22:33:48,544 DEBUG   SenderThread:27452 [sender.py:send():379] send: final
+2024-08-07 22:33:48,544 DEBUG   SenderThread:27452 [sender.py:send():379] send: footer
+2024-08-07 22:33:48,545 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: defer
+2024-08-07 22:33:48,545 INFO    SenderThread:27452 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-08-07 22:33:48,545 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-07 22:33:48,546 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: server_info
+2024-08-07 22:33:48,546 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-07 22:33:48,546 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: poll_exit
+2024-08-07 22:33:48,547 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-07 22:33:48,547 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: server_info
+2024-08-07 22:33:48,547 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-07 22:33:48,550 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-07 22:33:48,818 DEBUG   SenderThread:27452 [sender.py:send_request():406] send_request: poll_exit
+2024-08-07 22:33:48,818 INFO    MainThread:27452 [wandb_run.py:_footer_history_summary_info():4016] rendering history
+2024-08-07 22:33:48,818 INFO    MainThread:27452 [wandb_run.py:_footer_history_summary_info():4048] rendering summary
+2024-08-07 22:33:48,819 INFO    MainThread:27452 [wandb_run.py:_footer_sync_info():3975] logging synced files
+2024-08-07 22:33:48,820 DEBUG   HandlerThread:27452 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-07 22:33:48,821 INFO    HandlerThread:27452 [handler.py:finish():882] shutting down handler
+2024-08-07 22:33:49,553 INFO    WriterThread:27452 [datastore.py:close():296] close: C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\wandb\run-20240807_223326-r0jk5kew\run-r0jk5kew.wandb
+2024-08-07 22:33:49,825 INFO    SenderThread:27452 [sender.py:finish():1615] shutting down sender
+2024-08-07 22:33:49,825 INFO    SenderThread:27452 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-07 22:33:49,825 INFO    SenderThread:27452 [file_pusher.py:join():175] waiting for file pusher
