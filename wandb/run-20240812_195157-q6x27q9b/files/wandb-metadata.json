@@ -1,0 +1,45 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.9.10",
+    "heartbeatAt": "2024-08-12T10:51:59.250748",
+    "startedAt": "2024-08-12T10:51:57.414811",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/jeonghyeju/Documents/GitHub/coqui-training/train_glowtts.py",
+    "codePathLocal": "train_glowtts.py",
+    "codePath": "train_glowtts.py",
+    "git": {
+        "remote": "https://github.com/Sungshin-Entalk/coqui-training.git",
+        "commit": "c48015d0955c184337636627b0c0a3c27407351f"
+    },
+    "email": "111269736+f020202@users.noreply.github.com",
+    "root": "/Users/jeonghyeju/Documents/GitHub/coqui-training",
+    "host": "MacBook-Pro-2.local",
+    "username": "jeonghyeju",
+    "executable": "/Users/jeonghyeju/Documents/GitHub/coqui-training/venv/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2400,
+        "min": 2400,
+        "max": 2400
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2400,
+            "min": 2400,
+            "max": 2400
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 10.098846435546875
+        }
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
