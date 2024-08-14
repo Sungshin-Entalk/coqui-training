@@ -46,9 +46,10 @@ class Trainer:
         for sample in self.train_samples:
             self.optimizer.zero_grad()
             input_data = self.load_audio(sample['audio_file'])
-            x_lengths = torch.tensor([input_data.shape[1]])
-            target_data = self.load_audio(sample['audio_file'])  
-            y = target_data.unsqueeze(0)
+            input_data = input_data.type(torch.LongTensor)  # 데이터 타입을 LongTensor로 변환
+            x_lengths = torch.tensor([input_data.shape[1]], dtype=torch.long)
+            target_data = self.load_audio(sample['audio_file'])
+            y = target_data.unsqueeze(0).type(torch.LongTensor)  # 마찬가지로 LongTensor로 변환
             output = self.model(input_data, x_lengths, y)
             loss = self.compute_loss(output, y)
             loss.backward()
@@ -63,8 +64,8 @@ class Trainer:
         total_loss = 0
         with torch.no_grad():
             for sample in samples:
-                input_data = self.load_audio(sample['audio_file'])
-                x_lengths = torch.tensor([input_data.shape[1]])
+                input_data = self.load_audio(sample['audio_file']).type(torch.LongTensor)
+                x_lengths = torch.tensor([input_data.shape[1]], dtype=torch.long)
                 target_data = self.load_audio(sample['audio_file'])  
                 y = target_data.unsqueeze(0)
                 output = self.model(input_data, x_lengths, y)
@@ -110,6 +111,7 @@ def load_model(config, checkpoint_path):
 def infer(model, text, ap, tokenizer):
     # 입력 텍스트를 토큰으로 변환
     tokens = tokenizer.text_to_ids(text)
+    tokens = torch.LongTensor(tokens).unsqueeze(0)
     
     # 토큰을 텐서로 변환하고 배치 차원 추가
     tokens = torch.LongTensor(tokens).unsqueeze(0)

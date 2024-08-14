@@ -1,0 +1,70 @@
+ > Setting up Audio Processor...
+ | > sample_rate:12050
+ | > resample:False
+ | > num_mels:80
+ | > log_func:np.log10
+ | > min_level_db:-100
+ | > frame_shift_ms:None
+ | > frame_length_ms:None
+ | > ref_level_db:20
+ | > fft_size:1024
+ | > power:1.5
+ | > preemphasis:0.0
+ | > griffin_lim_iters:60
+ | > signal_norm:True
+ | > symmetric_norm:True
+ | > mel_fmin:0
+ | > mel_fmax:None
+ | > pitch_fmin:1.0
+ | > pitch_fmax:640.0
+ | > spec_gain:20.0
+ | > stft_pad_mode:reflect
+ | > max_norm:4.0
+ | > clip_norm:True
+ | > do_trim_silence:True
+ | > trim_db:45
+ | > do_sound_norm:False
+ | > do_amp_to_db_linear:True
+ | > do_amp_to_db_mel:True
+ | > do_rms_norm:False
+ | > db_level:None
+ | > stats_path:None
+ | > base:10
+ | > hop_length:256
+ | > win_length:1024
+Processing file: MyTTSDataset/wavs/audio1.wav, Text: Sherlock Holmes, The Rediscovered Railway Mysteries and Other Stories by John Taylor, read by Benedict Cumberbatch. An inscrutable mask garade. In a drawer in the bureau of an upstairs room of my current home. There is a locked cedar wood box which I inherited as a youth from my grandfather. This is one might say my box of secrets when I was young. It contained the treasures of boyhood, a catapult, a lump of bees wax, the carapace of a crab. For many years since, it has been the repository of an archive, admittedly a ragged and disordered archive, a collection of notes and scribblings concerning some of the many cases of my lifelong friend,
+Processing file: MyTTSDataset/wavs/audio2.wav, Text: the consulting detective Sherlock Holmes, which for one reason or another, I never took the trouble to write into proper reports. Having had recently a little time on my hands, I reopened this box of yellowing notebooks and it seemed to me that several of the cases, given the ocean of time between those events and the present day would now bear telling and I begin by chronicling an adventure which I may have dismissed for several reasons not because it lacked baffling and intriguing elements on the contrary, but mostly I think because it was for me personally such a dizzying and distressing experience. It was a Wednesday evening in July, at the end of a day of straight jacketing heat and I sat next to the open window of our parlor at Baker Street drinking in the air and hoping for the liberating ripple of a breeze. The newspaper on my lap reported the release from police custody of a known criminal
+Processing file: MyTTSDataset/wavs/audio3.wav, Text: Tabaius Organ, arrested some days previously for the murder of Max Zimmerman, a money lender shot through the head in his small apartment in Wardaw Street. In the end, there had been insufficient evidence to charge Organ with murder even though the police clearly thought him culpable. Strangely enough, I had once met Organ myself he had come to me as a patient suffering as I recall, from a severe lesion to the lower back, which he maintained had been caused by a fall against a metal stanchion but which I had little doubt was in fact a stab wound. My diagnosis was supported I believe by his barely veiled threat that I should under no circumstances make known his injury to any one else. He had an unforgettable, menacing way with him and I had felt immense relief when he left my surgery. I'd been looking forward to discussing the organ case with Holmes, who would certainly have some views on the subject. But when he finally
+Processing file: MyTTSDataset/wavs/audio4.wav, Text: appeared for dinner, he was irritable and uncommunicative and from these symptoms, I guessed him to be in the process of some taxing mental work. All the same I had no wish to set out the meal in silence stifling weather to be out and about homes I said peppering a slice of beef indeed Watson and equally stifling to be in he busied himself with cutting into a potato. After a while, I said, I've not seen you to day. I presume you were somewhere on business. Yes Watson I was another pause, the chink of cutlery somewhere local somewhere very local watson I'd expect you'd like to know where. Well, I've no wish to be intrusive in the basement. I've been all day in the basement of our house and since your desire not to be intrusive is clearly struggling against your overwhelming curiosity to know, I will tell you why I was there and he paused and smiled in the full confidence that you will not
+Processing file: MyTTSDataset/wavs/audio5.wav, Text: breathe a word to a soul about it. My homes, of course not and on the understanding that if I do tell you, you will not be able to leave this house until my work is complete. What I put down, almost dropped my knife and fork. You don't mean not leave it all that's precisely what I mean. So it may be that you would prefer to forgo my secret rather than consent to becoming a prisoner here for what might be several days hopelessly intrigued, I gave no thought to the discomfort of being shut indoors in this sultry heat No thought to the boredom, not even any thought to the fact that I had appointments in my diary. I am prepared to abide by your request. HOLMES He stood up from the table, his meal unfinished and went across to the hearth to retrieve his pipe and tobacco pouch. As he filled his pipe and lit it, he sank into his armchair. I believe you have been preoccupied with the case of Tabias Organ. WATSON Yes it has been on my mind how
+ | > Found 5 files in /Users/leeyujin/Documents/GitHub/coqui-training/MyTTSDataset
+/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/__init__.py:955: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/tensor/python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+Traceback (most recent call last):
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/train_glowtts.py", line 259, in <module>
+    main()
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/train_glowtts.py", line 242, in main
+    train_loss = trainer.train_epoch()
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/train_glowtts.py", line 52, in train_epoch
+    output = self.model(input_data, x_lengths, y)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/TTS/tts/models/glow_tts.py", line 231, in forward
+    o_mean, o_log_scale, o_dur_log, x_mask = self.encoder(x, x_lengths, g=g)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/TTS/tts/layers/glow_tts/encoder.py", line 152, in forward
+    x = self.emb(x) * math.sqrt(self.hidden_channels)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/nn/modules/sparse.py", line 164, in forward
+    return F.embedding(
+  File "/Users/leeyujin/Documents/GitHub/coqui-training/venv/lib/python3.9/site-packages/torch/nn/functional.py", line 2267, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected tensor for argument #1 'indices' to have one of the following scalar types: Long, Int; but got torch.FloatTensor instead (while checking arguments for embedding)
