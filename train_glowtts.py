@@ -5,6 +5,7 @@ import torch
 import torchaudio
 import wandb  # wandb 임포트
 import torch.nn.functional as F
+import torch.optim as optim
 
 from TTS.config.shared_configs import BaseDatasetConfig, BaseAudioConfig
 from TTS.tts.configs.glow_tts_config import GlowTTSConfig
@@ -28,7 +29,7 @@ class Trainer:
         self.model = model
         self.train_samples = train_samples
         self.eval_samples = eval_samples
-        self.optimizer = optimizer  # Placeholder for the optimizer
+        self.optimizer = None  # Placeholder for the optimizer
 
     def set_optimizer(self, optimizer):
         self.optimizer = optimizer
@@ -201,8 +202,10 @@ def main():
         audio=audio_config,
         characters=character_config,
         eval_split_size=0.2,
-        test_sentences=[]
+        test_sentences=[],
     )
+
+    learning_rate=0.001
 
     # 오디오 프로세서 초기화
     ap = AudioProcessor.init_from_config(config)
@@ -222,14 +225,16 @@ def main():
     # 모델 초기화
     model = GlowTTS(config, ap, tokenizer, speaker_manager=None)
 
+    # 옵티마이저 초기화 (Adam 옵티마이저)
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+
     # 트레이너 초기화
     trainer_args = TrainerArgs()
     trainer = Trainer(
-        trainer_args, config, output_path, model=model, optimizer, train_samples=train_samples
-    )
+    trainer_args, config, output_path, model=model, train_samples=train_samples, eval_samples=eval_samples
+)
 
-     # 옵티마이저 초기화 (Adam 옵티마이저)
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
+    # 옵티마이저 설정
     trainer.set_optimizer(optimizer)
 
     # 학습 시작
