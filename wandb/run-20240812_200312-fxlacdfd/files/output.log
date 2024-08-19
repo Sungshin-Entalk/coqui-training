@@ -1,0 +1,8 @@
+C:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\venv\lib\site-packages\torch\__init__.py:955: UserWarning: torch.set_default_tensor_type() is deprecated as of PyTorch 2.1, please use torch.set_default_dtype() and torch.set_default_device() as alternatives. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\torch\csrc\tensor\python_tensor.cpp:434.)
+  _C._set_default_tensor_type(t)
+Traceback (most recent call last):
+  File "c:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\train_glowtts.py", line 258, in <module>
+    main()
+  File "c:\Users\yiuri\OneDrive\문서\GitHub\coqui-training\train_glowtts.py", line 183, in main
+    config = GlowTTSConfig(
+TypeError: __init__() got an unexpected keyword argument 'learning_rate'
